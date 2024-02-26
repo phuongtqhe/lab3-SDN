@@ -30,7 +30,7 @@ db.products.insertMany([
       id: 1,
       name: "Laptop",
       price: 500,
-      category_id: 1,
+      category: 1,
       description: "A portable computer",
       images: [
         { id: 1, url: "laptop1.jpg" },
@@ -47,7 +47,7 @@ db.products.insertMany([
       id: 2,
       name: "Phone",
       price: 300,
-      category_id: 1,
+      category: 1,
       description: "A smart phone",
       images: [
         { id: 3, url: "phone1.jpg" },
@@ -64,7 +64,7 @@ db.products.insertMany([
       id: 3,
       name: "Tablet",
       price: 400,
-      category_id: 1,
+      category: 1,
       description: "A touch screen device",
       images: [
         { id: 5, url: "tablet1.jpg" },
@@ -81,7 +81,7 @@ db.products.insertMany([
       id: 4,
       name: "Keyboard",
       price: 50,
-      category_id: 1,
+      category: 1,
       description: "A wireless keyboard",
       images: [
         { id: 7, url: "keyboard1.jpg" },
@@ -98,7 +98,7 @@ db.products.insertMany([
       id: 5,
       name: "Mouse",
       price: 20,
-      category_id: 1,
+      category: 1,
       description: "A wireless mouse",
       images: [
         { id: 9, url: "mouse1.jpg" },
@@ -115,7 +115,7 @@ db.products.insertMany([
         id: 6,
         name: "Harry Potter",
         price: 15,
-        category_id: 2,
+        category: 2,
         description: "A fantasy novel series",
         images: [
           { id: 21, url: "harrypotter1.jpg" },
@@ -132,7 +132,7 @@ db.products.insertMany([
         id: 7,
         name: "Lord of the Rings",
         price: 20,
-        category_id: 2,
+        category: 2,
         description: "An epic fantasy novel",
         images: [
           { id: 23, url: "lordoftherings1.jpg" },
@@ -149,7 +149,7 @@ db.products.insertMany([
         id: 8,
         name: "Game of Thrones",
         price: 25,
-        category_id: 2,
+        category: 2,
         description: "A fantasy novel series",
         images: [
           { id: 25, url: "gameofthrones1.jpg" },
@@ -166,7 +166,7 @@ db.products.insertMany([
         id: 9,
         name: "The Hunger Games",
         price: 15,
-        category_id: 2,
+        category: 2,
         description: "A dystopian novel series",
         images: [
           { id: 27, url: "hungergames1.jpg" },
@@ -183,7 +183,7 @@ db.products.insertMany([
         id: 10,
         name: "The Da Vinci Code",
         price: 10,
-        category_id: 2,
+        category: 2,
         description: "A mystery thriller novel",
         images: [
           { id: 29, url: "davincicode1.jpg" },
@@ -200,7 +200,7 @@ db.products.insertMany([
         id: 11,
         name: "T-shirt",
         price: 10,
-        category_id: 3,
+        category: 3,
         description: "A casual shirt",
         images: [
           { id: 31, url: "tshirt1.jpg" },
@@ -217,7 +217,7 @@ db.products.insertMany([
         id: 12,
         name: "Jeans",
         price: 20,
-        category_id: 3,
+        category: 3,
         description: "A pair of denim pants",
         images: [
           { id: 33, url: "jeans1.jpg" },
@@ -234,7 +234,7 @@ db.products.insertMany([
         id: 13,
         name: "Jacket",
         price: 30,
-        category_id: 3,
+        category: 3,
         description: "A warm jacket",
         images: [
           { id: 35, url: "jacket1.jpg" },
@@ -251,7 +251,7 @@ db.products.insertMany([
         id: 14,
         name: "Dress",
         price: 25,
-        category_id: 3,
+        category: 3,
         description: "A beautiful dress",
         images: [
           { id: 37, url: "dress1.jpg" },
@@ -268,7 +268,7 @@ db.products.insertMany([
         id: 15,
         name: "Shoes",
         price: 15,
-        category_id: 3,
+        category: 3,
         description: "A pair of shoes",
         images: [
           { id: 39, url: "shoes1.jpg" },
@@ -285,7 +285,7 @@ db.products.insertMany([
         id: 16,
         name: "Football",
         price: 15,
-        category_id: 4,
+        category: 4,
         description: "A spherical ball used in soccer",
         images: [
           { id: 41, url: "football1.jpg" },
@@ -302,7 +302,7 @@ db.products.insertMany([
         id: 17,
         name: "Basketball",
         price: 20,
-        category_id: 4,
+        category: 4,
         description: "An orange ball used in basketball",
         images: [
           { id: 43, url: "basketball1.jpg" },
@@ -319,7 +319,7 @@ db.products.insertMany([
         id: 18,
         name: "Tennis Racket",
         price: 25,
-        category_id: 4,
+        category: 4,
         description: "A racket used in tennis",
         images: [
           { id: 45, url: "tennisracket1.jpg" },
@@ -336,7 +336,7 @@ db.products.insertMany([
         id: 19,
         name: "Golf Club",
         price: 30,
-        category_id: 4,
+        category: 4,
         description: "A club used in golf",
         images: [
           { id: 47, url: "golfclub1.jpg" },
@@ -353,7 +353,7 @@ db.products.insertMany([
         id: 20,
         name: "Bicycle",
         price: 50,
-        category_id: 4,
+        category: 4,
         description: "A two-wheeled vehicle",
         images: [
           { id: 49, url: "bicycle1.jpg" },
