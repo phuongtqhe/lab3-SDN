@@ -34,6 +34,17 @@ const createProduct = async (req, res) => {
     }
 }
 
+const createComment = async (req, res) => {
+    try{
+        const {comments} = req.body;
+        console.log(comments)
+        const editedProduct = await ProductRepo.editComment(req.params.id,comments)
+        res.status(201).json(editedProduct);
+    } catch (error) {
+        res.status(500).json({message: error.toString() + req.body});
+    }
+}
+
 // PUT: /products/1
 const editProduct = async(req,res)=>{
     try {
@@ -61,5 +72,6 @@ export default {
     getProductById,
     createProduct,
     editProduct,
-    deleteProduct
+    deleteProduct,
+    createComment
 }

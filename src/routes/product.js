@@ -12,6 +12,9 @@ productRouter.get('/:id', ProductController.getProductById);
 // POST: /products -> Create a new product
 productRouter.post('/', ProductController.createProduct);
 
+// Define the route for adding a comment to a product
+productRouter.post('/:id/comments',express.json(), ProductController.createComment);
+
 // PUT: /products/:id
 productRouter.put("/:id", ProductController.editProduct);
 

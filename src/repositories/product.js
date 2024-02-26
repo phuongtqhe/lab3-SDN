@@ -40,6 +40,17 @@ const edit = async(id, { name,price, description, images, comments, category}) =
     }
 }
 
+const editComment = async(id, comments) => {
+    try{
+        return await Products.updateOne(
+            { _id: id },
+            { $push: { comments: { $each: [ comments ], $position: 0 } } }
+        )
+    } catch (error) {
+        throw new Error(error.toString());
+    }
+}
+
 const deleteProduct = async(id)=>{
     try {
         return await Products.findByIdAndDelete({_id: id});
@@ -53,5 +64,6 @@ export default{
     list,
     getById,
     edit,
-    deleteProduct
+    deleteProduct,
+    editComment
 }
